@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+
+.topo {
+    width: 100%;
+    background-color: #2A9FD6 ;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+/*Logo menor*/
+.logo {
+    width: 130px;
+}
+
+/*texto*/
+.textos {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  gap: 10px;
+}
+.textos h1 {
+    margin: 0;
+    font-size: 32px; /*aumenta o tamanho*/
+    font-weight: 700; /* deixa mais forte */
+    letter-spacing: 2px; /* espaçamento entre letras */
+    color:  #1A1A1A;
+}
+
+.textos p {
+    margin: 12px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+/* MENU EM BAIXO*/
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+   background-color: #ffffff;
+}
+
+.menu a {
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* efeito hover*/
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/*SOBRE*/
+.sobre {
+    background-color: #F5F5F5;
+    padding: 60PX 20PX;
+}
+
+.conteudo {
+    max-width: 800PX;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conteudo h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color:#1A1A1A;
+}
+
+.conteudo p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/*SERVIÇOS*/
+.servicos {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.servicos h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #2A9FD6;
+}
+
+/* grade dos cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* quebra no celular */
+}
+
+/* cada card */
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover; /* não distorce */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card {
+    background-color: #F5F5F5;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    text-align: center;
+}
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* título do card */
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #1A1A1A;
+}
+
+/* texto */
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* CONTATOS*/
+.contato {
+    background-color: #2A9FD6; /* azul da marca */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contato h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.contato p {
+    margin-bottom: 10px;
+}
+
+/* botão */
+.btn-whatsapp {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #25D366; /* verde WhatsApp */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 768px) {
+
+    .linha-topo {
+        flex-direction: column; /* empilha */
+        text-align: center;
+    }
+
+    .logo {
+        width: 90px;
+        margin-bottom: 10px;
+    }
+
+    .textos {
+        position: static; /* tira o absolute */
+        transform: none;
+    }
+
+}
+
+/* MENU*/
+@media (max-width: 768px) {
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+}
+
+/* SOBRE*/
+
+@media (max-width: 768px) {
+
+    .conteudo-sobre {
+        padding: 0 10px;
+    }
+
+    .conteudo-sobre h2 {
+        font-size: 24px;
+    }
+
+}
+
+/*SERVIÇOS*/
+@media (max-width: 768px) {
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+}
+
+/* CONTATO*/
+@media (max-width: 768px) {
+
+    .contato {
+        padding: 40px 15px;
+    }
+
+    .btn-whatsapp {
+        width: 100%;
+        max-width: 250px;
+    }
+
+}
+
+/* FOOTER*/
+footer {
+    background:  #2A9FD6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
