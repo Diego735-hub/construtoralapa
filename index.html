@@ -1,92 +1,218 @@
 <!DOCTYPE html>
-<html lang="pr-BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lapacontrutora</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Lapa Construtora</title>
+    <meta name="description" content="Lapa Construtora: construção, reformas, acabamentos e manutenção com qualidade e segurança.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilo/style.css">
 </head>
-<body>
+<body id="inicio">
     <header class="topo">
+        <div class="container">
+            <div class="info">
+                <a href="#inicio" class="marca" aria-label="Voltar ao início">
+                    <img src="imagens/Logo da Lapa Construtora com obra.png" alt="Logo da Lapa Construtora" class="logo">
+                    <div class="textos">
+                        <h1>Lapa Construtora</h1>
+                        <p>Construindo sonhos com qualidade</p>
+                    </div>
+                </a>
 
-        <div class="info">   
-              <img src="imagens/Logo da Lapa Construtora com obra.png" alt="logo da lapa contrutora" class="logo">    
+                <a href="https://wa.me/5581995158991" class="btn-topo" target="_blank" rel="noopener noreferrer">Solicitar orçamento</a>
+            </div>
 
-        <div class="textos">
-             <h1>Lapa Construtora</h1>
-            <p>Construindo sonhos com qualidade</p>
+            <nav class="menu" aria-label="Navegação principal">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#contato">Contato</a>
+            </nav>
 
+            <div class="hero">
+                <div class="hero-texto">
+                    <span class="selo">Atendimento residencial e comercial</span>
+                    <h2>Obras e reformas com acabamento profissional, organização e confiança.</h2>
+                    <p>Executamos projetos com atenção aos detalhes, cumprimento de prazos e foco em resultados duráveis para cada cliente.</p>
+
+                    <div class="hero-acoes">
+                        <a href="#servicos" class="btn-primario">Ver serviços</a>
+                        <a href="#contato" class="btn-secundario">Entrar em contato</a>
+                    </div>
+                </div>
+
+                <div class="hero-destaques">
+                    <div class="destaque">
+                        <strong>Qualidade</strong>
+                        <span>Execução cuidadosa em cada etapa da obra.</span>
+                    </div>
+                    <div class="destaque">
+                        <strong>Compromisso</strong>
+                        <span>Atendimento próximo, prático e transparente.</span>
+                    </div>
+                    <div class="destaque">
+                        <strong>Versatilidade</strong>
+                        <span>Soluções para construção, reforma e manutenção.</span>
+                    </div>
+                </div>
+            </div>
         </div>
-         </div>
-
-        <nav class="menu">
-            <a href="#">Inicio</a>
-            <a href="#">Sobre</a>
-            <a href="#">Serviços</a>
-            <a href="#">Contato</a>
-        </nav>
     </header>
-    <section class="sobre">
-        <div class="conteudo">
-            <h2>SOBRE A EMPRESA</h2>
 
-            <P>   A Lapa Construtora é especializada em construção civil, oferecendo serviços de alta qualidade em obras residenciais e comerciais. Trabalhamos com dedicação, responsabilidade e atenção aos detalhes em cada projeto.</P>
-            
-            <P> Nosso compromisso é entregar resultados que superem as expectativas, garantindo segurança, durabilidade e satisfação para nossos clientes.</P>
-        </div>
-    </section>
+    <main>
+        <section class="sobre" id="sobre">
+            <div class="container">
+                <div class="conteudo">
+                    <span class="secao-tag">Quem somos</span>
+                    <h2>Sobre a empresa</h2>
+                    <p>A Lapa Construtora é especializada em construção civil, oferecendo serviços de alta qualidade em obras residenciais e comerciais. Trabalhamos com dedicação, responsabilidade e atenção aos detalhes em cada projeto.</p>
+                    <p>Nosso compromisso é entregar resultados que superem as expectativas, garantindo segurança, durabilidade e satisfação para nossos clientes.</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="servicos">
-    <h2>Nossos Serviços</h2>
+        <section class="servicos" id="servicos">
+            <div class="container">
+                <div class="cabecalho-secao">
+                    <span class="secao-tag">O que fazemos</span>
+                    <h2>Nossos Serviços</h2>
+                    <p>Os serviços abaixo continuam como base do atendimento e agora contam com mais detalhes visuais e espaço para apresentar melhor cada etapa do trabalho.</p>
+                </div>
 
-    <div class="cards">
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-galeria" data-gallery="casas">
+                            <button class="galeria-btn galeria-btn-anterior" type="button" aria-label="Imagem anterior da galeria">&lsaquo;</button>
+                            <div class="galeria-slides">
+                                <img src="imagens/imagem-contrução de casa.png" alt="Construção de casa em andamento" class="galeria-imagem ativa">
+                                <img src="imagens/WhatsApp Image 2026-04-13 at 14.40.20.jpeg" alt="Etapa estrutural de obra residencial" class="galeria-imagem">
+                                <img src="imagens/WhatsApp Image 2026-04-13 at 14.40.21.jpeg" alt="Ambiente de obra com execução profissional" class="galeria-imagem">
+                            </div>
+                            <button class="galeria-btn galeria-btn-proxima" type="button" aria-label="Próxima imagem da galeria">&rsaquo;</button>
+                            <div class="galeria-indicadores" aria-hidden="true"></div>
+                        </div>
+                        <div class="card-conteudo">
+                            <h3>Construção de Casas</h3>
+                            <p>Realizamos obras completas com qualidade e segurança, do início ao acabamento.</p>
+                            <ul class="card-detalhes">
+                                <li>Planejamento e execução por etapas</li>
+                                <li>Organização da obra e acabamento final</li>
+                                <li>Atendimento para projetos residenciais</li>
+                            </ul>
+                            <a href="https://wa.me/5581995158991?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20construção%20de%20casa." class="card-cta" target="_blank" rel="noopener noreferrer">Solicitar orçamento</a>
+                        </div>
+                    </article>
 
-        <div class="card">
-            <img src="imagens/imagem-contrução de casa.png" alt="construção de casas">
-            <h3>Construção de Casas</h3>
-            <p>Realizamos obras completas com qualidade e segurança, do início ao acabamento.</p>
-        </div>
+                    <article class="card">
+                        <div class="card-galeria" data-gallery="reformas">
+                            <button class="galeria-btn galeria-btn-anterior" type="button" aria-label="Imagem anterior da galeria">&lsaquo;</button>
+                            <div class="galeria-slides">
+                                <img src="imagens/imagem-reformas.png" alt="Serviço de reforma em imóvel" class="galeria-imagem ativa">
+                                <img src="imagens/WhatsApp Image 2026-04-13 at 14.40.20 (1).jpeg" alt="Reforma com melhoria de ambiente" class="galeria-imagem">
+                                <img src="imagens/WhatsApp Image 2026-04-13 at 14.40.22.jpeg" alt="Detalhes de reforma e renovação" class="galeria-imagem">
+                            </div>
+                            <button class="galeria-btn galeria-btn-proxima" type="button" aria-label="Próxima imagem da galeria">&rsaquo;</button>
+                            <div class="galeria-indicadores" aria-hidden="true"></div>
+                        </div>
+                        <div class="card-conteudo">
+                            <h3>Reformas</h3>
+                            <p>Transformamos e modernizamos seu imóvel com eficiência e ótimo acabamento.</p>
+                            <ul class="card-detalhes">
+                                <li>Atualização de ambientes internos e externos</li>
+                                <li>Melhor aproveitamento de espaço</li>
+                                <li>Acabamento alinhado com a necessidade do cliente</li>
+                            </ul>
+                            <a href="https://wa.me/5581995158991?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20reforma." class="card-cta" target="_blank" rel="noopener noreferrer">Pedir avaliação</a>
+                        </div>
+                    </article>
 
-        <div class="card">
-            <img src="imagens/imagem-reformas.png" alt="Reformas">
-            <h3>Reformas</h3>
-            <p>Transformamos e modernizamos seu imóvel com eficiência e ótimo acabamento.</p>
-        </div>
+                    <article class="card">
+                        <div class="card-galeria" data-gallery="acabamentos">
+                            <button class="galeria-btn galeria-btn-anterior" type="button" aria-label="Imagem anterior da galeria">&lsaquo;</button>
+                            <div class="galeria-slides">
+                                <img src="imagens/imagem-acabamentos.png" alt="Serviços de acabamentos" class="galeria-imagem ativa">
+                                <img src="imagens/WhatsApp Image 2026-04-13 at 14.40.23.jpeg" alt="Aplicação de acabamento refinado" class="galeria-imagem">
+                                <img src="imagens/WhatsApp Image 2026-04-13 at 14.40.23 (1).jpeg" alt="Detalhes de revestimento e acabamento" class="galeria-imagem">
+                            </div>
+                            <button class="galeria-btn galeria-btn-proxima" type="button" aria-label="Próxima imagem da galeria">&rsaquo;</button>
+                            <div class="galeria-indicadores" aria-hidden="true"></div>
+                        </div>
+                        <div class="card-conteudo">
+                            <h3>Acabamentos</h3>
+                            <p>Serviços de pintura, pisos, revestimentos e detalhes finais com perfeição.</p>
+                            <ul class="card-detalhes">
+                                <li>Pintura e revestimentos com melhor apresentação</li>
+                                <li>Instalação de pisos e detalhes finais</li>
+                                <li>Mais cuidado visual e durabilidade</li>
+                            </ul>
+                            <a href="https://wa.me/5581995158991?text=Olá!%20Gostaria%20de%20um%20orçamento%20para%20acabamentos." class="card-cta" target="_blank" rel="noopener noreferrer">Ver opções</a>
+                        </div>
+                    </article>
 
-        <div class="card">
-            <img src="imagens/imagem-acabamentos.png" alt="acabamento">
-            <h3>Acabamentos</h3>
-            <p>Serviços de pintura, pisos, revestimentos e detalhes finais com perfeição.</p>
-        </div>
+                    <article class="card">
+                        <div class="card-galeria" data-gallery="manutencao">
+                            <button class="galeria-btn galeria-btn-anterior" type="button" aria-label="Imagem anterior da galeria">&lsaquo;</button>
+                            <div class="galeria-slides">
+                                <img src="imagens/imagem-manutenção.png" alt="Serviço de manutenção predial" class="galeria-imagem ativa">
+                                <img src="imagens/WhatsApp Image 2026-04-13 at 14.40.21 (1).jpeg" alt="Equipe executando manutenção" class="galeria-imagem">
+                                <img src="imagens/WhatsApp Image 2026-04-13 at 14.40.24.jpeg" alt="Serviço de reparo e manutenção" class="galeria-imagem">
+                            </div>
+                            <button class="galeria-btn galeria-btn-proxima" type="button" aria-label="Próxima imagem da galeria">&rsaquo;</button>
+                            <div class="galeria-indicadores" aria-hidden="true"></div>
+                        </div>
+                        <div class="card-conteudo">
+                            <h3>Manutenção</h3>
+                            <p>Pequenos reparos e serviços para manter seu imóvel sempre em bom estado.</p>
+                            <ul class="card-detalhes">
+                                <li>Correções pontuais com agilidade</li>
+                                <li>Cuidados preventivos para maior durabilidade</li>
+                                <li>Atendimento para residências e comércios</li>
+                            </ul>
+                            <a href="https://wa.me/5581995158991?text=Olá!%20Preciso%20de%20um%20orçamento%20para%20manutenção." class="card-cta" target="_blank" rel="noopener noreferrer">Agendar contato</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">
-            <img src="imagens/imagem-manutenção.png" alt="Manutenção">
-            <h3>Manutenção</h3>
-            <p>Pequenos reparos e serviços para manter seu imóvel sempre em bom estado.</p>
-        </div>
-    </div>
-</section>
+        <section class="contato" id="contato">
+            <div class="container contato-container">
+                <div class="contato-texto">
+                    <span class="secao-tag secao-tag-clara">Fale com a equipe</span>
+                    <h2>Contato</h2>
+                    <p>Entre em contato e solicite seu orçamento sem compromisso.</p>
+                </div>
 
-<section class="contato">
+                <div class="info-contato">
+                    <a href="https://wa.me/5581995158991" target="_blank" rel="noopener noreferrer">
+                        <strong>WhatsApp</strong>
+                        <span>(81) 9 9515-8991</span>
+                    </a>
+                    <a href="mailto:andersonfelixlapa2025@gmail.com">
+                        <strong>Email</strong>
+                        <span>andersonfelixlapa2025@gmail.com</span>
+                    </a>
+                    <a href="https://www.google.com/maps/search/Recife+-+Brasil" target="_blank" rel="noopener noreferrer">
+                        <strong>Localização</strong>
+                        <span>Recife - Brasil</span>
+                    </a>
+                </div>
 
-    <h2>Contato</h2>
+                <div class="contato-acoes">
+                    <a href="https://wa.me/5581995158991" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+                    <a href="mailto:andersonfelixlapa2025@gmail.com" class="btn-contato-secundario">Enviar email</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <p>Entre em contato e solicite seu orçamento sem compromisso.</p>
-
-    <div class="info-contato">
-        <p><strong>WhatsApp:</strong> (81) 9 9515-8991</p>
-        <p><strong>Email:</strong> andersonfelixlapa2025@gmail.com</p>
-        <p><strong>Localização:</strong> Recife - Brasil</p>
-    </div>
-
-   <a href="https://wa.me/5581995158991" class="btn-whatsapp">Falar no WhatsApp</a>
-
-</section>
-   <!-- FOOTER -->
     <footer>
-        <p>© 2026 Lapa Construtora- Todos os direitos reservados</p>
+        <p>© 2026 Lapa Construtora - Todos os direitos reservados</p>
     </footer>
- 
+
+    <script src="scripts/main.js"></script>
 </body>
 </html>
